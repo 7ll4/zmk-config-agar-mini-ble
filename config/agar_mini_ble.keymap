@@ -39,15 +39,6 @@
         };
     };
 
-    macros {
-        screenshot_mac: screenshot_mac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp>;
-            label = "SCREENSHOT_MAC";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
