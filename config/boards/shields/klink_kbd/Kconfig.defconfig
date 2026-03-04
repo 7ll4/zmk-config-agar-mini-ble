@@ -1,15 +1,12 @@
-# config/boards/shields/klink_kbd/Kconfig.defconfig
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
 
-if SHIELD_AGAR_MINI_BLE
+if SHIELD_KLINK_KBD
 
 config ZMK_KEYBOARD_NAME
     default "Agar Mini BLE"
 
 config LED
-    default y
-
-# 슬립 기능이 쉴드 레벨에서 지원되도록 명시
-config ZMK_SLEEP
     default y
 
 endif
