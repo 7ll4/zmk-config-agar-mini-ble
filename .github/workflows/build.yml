@@ -3,4 +3,5 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    # @main 대신 특정 시점의 안정적인 커밋 해시나 버전을 사용하여 오류를 회피합니다.
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.1
