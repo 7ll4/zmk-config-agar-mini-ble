@@ -1,12 +1,10 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_KLINK_KBD
+# all use the same settings. remove #if
 
 config ZMK_KEYBOARD_NAME
-    default "Agar Mini BLE"
+    default "agar_mini_ble"
 
 config LED
     default y
-
-endif
