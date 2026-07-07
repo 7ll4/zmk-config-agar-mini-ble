@@ -50,16 +50,6 @@
         };
     };
 
-    macros {
-        lock: lock {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&gresc>, <&macro_press>, <&kp>;
-
-            label = "LOCK";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
