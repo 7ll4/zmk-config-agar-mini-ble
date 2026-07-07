@@ -16,31 +16,37 @@
         BT1 {
             bindings = <&bt BT_SEL 1>;
             key-positions = <14 1>;
+            layers = <0>;
         };
 
         BT2 {
             bindings = <&bt BT_SEL 2>;
             key-positions = <2 15>;
+            layers = <0>;
         };
 
         BT3 {
             bindings = <&bt BT_SEL 3>;
             key-positions = <3 16>;
+            layers = <0>;
         };
 
         BT4 {
             bindings = <&bt BT_SEL 4>;
             key-positions = <4 17>;
+            layers = <0>;
         };
 
         BT0 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <5 18>;
+            layers = <0>;
         };
 
         go0 {
             bindings = <&to 0>;
             key-positions = <17 20>;
+            layers = <7>;
         };
     };
 
