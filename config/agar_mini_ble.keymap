@@ -37,21 +37,20 @@
             bindings = <&bt BT_SEL 0>;
             key-positions = <5 18>;
         };
+
+        go0 {
+            bindings = <&to 0>;
+            key-positions = <17 20>;
+        };
     };
 
     macros {
-        excel: new_macro {
+        lock: lock {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp F11>;
-            label = "NEW_MACRO";
-        };
+            bindings = <&gresc>, <&macro_press>, <&kp>;
 
-        mac_screenshot: mac_screenshot {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
-            label = "MAC_SCREENSHOT";
+            label = "LOCK";
         };
     };
 
@@ -87,7 +86,7 @@
 
         layer3 {
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_SEL 0   &trans  &trans  &trans        &trans           &trans      &trans  &bt BT_CLR_ALL
+&bt BT_CLR_ALL  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_SEL 0   &trans  &trans  &trans        &trans           &trans      &trans  &to 7
 &trans          &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &bt BT_DISC 0  &trans  &trans  &trans        &trans           &trans      &trans
 &trans          &trans         &trans         &trans         &trans         &trans         &trans  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_MUTE  &trans
 &bootloader     &trans         &trans         &trans         &trans
@@ -123,10 +122,10 @@
 
         layer7 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none
             >;
         };
     };
